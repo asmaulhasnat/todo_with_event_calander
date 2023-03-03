@@ -19,7 +19,7 @@ trait CommonAccessor {
               return $data=$data->get();
             }
             
-            return $data=$data->paginate(1)->appends($_GET);
+            return $data=$data->paginate(10)->appends($_GET);
             
         } catch (\Exception $e) {
             return [];
