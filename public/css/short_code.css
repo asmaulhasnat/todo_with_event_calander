@@ -1,0 +1,92 @@
+    small.note span.shortcode {
+        display: inline-flex;
+        position: relative;
+        
+    }
+
+    small.note span.shortcode::before {
+        content: '\f0ea';
+        font-family: FontAwesome;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        background-color: #000;
+        position: absolute;
+        text-align: center;
+        color: #fff;
+        top: 0;
+        left: 50%;
+        text-decoration: none;
+        /*font-weight: 900;*/
+        align-items: center;
+        vertical-align: middle;
+        font-size: 10px;
+        padding: 3px;
+        opacity: 0;
+        transition: .15s;
+        font-style: normal;
+    }
+
+    small.note span.shortcode:hover {
+        background-color: rgba(109, 109, 109, 0.5);
+        border-radius: 5px;
+        color: #000;
+        cursor: pointer;
+    }
+
+    small.note span.shortcode:hover:before {
+        opacity: 1;
+    }
+
+    .copied {
+        text-align: center;
+    }
+
+    .copied:before {
+        content: '';
+        position: absolute;
+        display: block;
+        top: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-style: solid;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid #000;
+        border-bottom: transparent;
+        text-align: center;
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    .copied:after {
+        content: 'Copied to Clipboard!';
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        background-color: #000;
+        color: #fff;
+        height: 100%;
+        width: 150px;
+        border-radius: 5px;
+    }
+
+    .messageReference .shortcode-section {
+        display: block;
+    }
+
+    .messageReference .shortcode-section + .shortcode-section {
+        margin-top: 3px;
+    }
+
+    .messageReference .shortcode-section-title {
+        display: block !important;
+        font-size: 11px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .messageReference .shortcode-section-data {
+        display: block !important;
+        margin-top: -2px;
+    }
