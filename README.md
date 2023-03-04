@@ -4,11 +4,11 @@
 
 Clone the repository
 
-    git clone https://github.com/asmaulhasnat/todo_notebook.git
+    git clone https://github.com/asmaulhasnat/todo_with_event_calander.git
 
 Switch to the repo folder
 
-    cd todo_notebook
+    cd todo_with_event_calander
 
 Install all the dependencies using composer
 
